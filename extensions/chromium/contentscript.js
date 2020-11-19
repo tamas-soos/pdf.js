@@ -29,6 +29,8 @@ if (CSS.supports("animation", "0s")) {
 }
 
 function onAnimationStart(event) {
+  console.log("onAnimationStart: event", event);
+
   if (event.animationName === "pdfjs-detected-object-or-embed") {
     watchObjectOrEmbed(event.target);
   }

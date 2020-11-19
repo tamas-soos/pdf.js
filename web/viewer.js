@@ -15,6 +15,7 @@
 
 import { AppOptions } from "./app_options.js";
 import { PDFViewerApplication } from "./app.js";
+import { start_lara_app } from "./_lara/app.js";
 
 /* eslint-disable-next-line no-unused-vars */
 const pdfjsVersion =
@@ -239,5 +240,7 @@ if (
 } else {
   document.addEventListener("DOMContentLoaded", webViewerLoad, true);
 }
+
+start_lara_app();
 
 export { PDFViewerApplication, AppOptions as PDFViewerApplicationOptions };
